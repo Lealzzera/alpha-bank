@@ -1,0 +1,82 @@
+.menu-header {
+  background-color: #FFF;
+  height: 70px;
+}
+
+#menu-mobile-template {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-alpha {
+  max-width: 90px;
+  margin-top: 8px;
+}
+
+.menu-icon-mobile {
+  display: none;
+}
+
+
+@media (max-width: 1068px) {
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .div-logo {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon-mobile {
+    display: inline;
+    position: absolute;
+  }
+
+
+  .menu-nav {
+    margin: 0px;
+    margin-top: 10px;
+  }
+
+  .logo-alpha {
+    max-width: 60px;
+  }
+
+  .open-bank-account-button {
+    padding: 5px;
+    font-size: 12px
+  }
+
+  .middle,
+  .online-bank-button {
+    display: none;
+  }
+
+  #menu-mobile-template.activate {
+    display: block;
+    animation: menuActive 1s forwards;
+  }
+
+  @keyframes menuActive {
+    from {
+      height: 0%;
+    }
+
+    to {
+      height: 100%;
+    }
+  }
+}
