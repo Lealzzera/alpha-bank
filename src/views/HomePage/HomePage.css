@@ -1,0 +1,50 @@
+.header {
+  width: 100vw;
+  position: fixed;
+}
+
+.open-account-adv {
+  display: flex;
+  padding-top: 70px;
+}
+
+.first-section-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 130px 0px;
+}
+
+.paragraf {
+  margin-top: 10px;
+}
+
+.div-img {
+  min-width: 656px;
+}
+
+.button-alpha-none {
+  display: none;
+}
+
+.buttons {
+  padding-top: 30px;
+  margin-left: -10px;
+}
+
+@media (max-width: 600px) {
+  .open-account-adv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+
+  .div-img {
+    min-width: 100%;
+  }
+
+  .first-section-text {
+    padding: 10px 30px 30px;
+  }
+}
