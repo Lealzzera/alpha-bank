@@ -1,22 +1,32 @@
 import React from 'react'
 import { api } from '../../api/api'
 
+type dollarPriceResponse = {
+  USDBRL: Record<string, string>
+}
+
 const ExchangeRate = () => {
 
-  const [dollarPrice, setDollarPrice] = React.useState([]);
+  const [dollarPrice, setDollarPrice] = React.useState<dollarPriceResponse>({USDBRL: {}});
 
   React.useEffect(() => {
-    getDollarPrice();
+    (async () => {
+      await getDollarPrice();
+    })()
   }, []);
 
   const getDollarPrice = async () => {
-    let response = await api.dollarPrice();
+    const response = await api.dollarPrice();
     return setDollarPrice(response);
   }
 
   return (
     <div>
-      {dollarPrice}
+      <ul>
+        {Object.keys(dollarPrice.USDBRL).map(item => (
+          <li key={item}>{item}: {dollarPrice.USDBRL[item]}</li>
+        ))}
+      </ul>
     </div>
   )
 }

@@ -40,9 +40,7 @@ const Header = ({ classHeader }: Props) => {
         </div>
         <div className='menu-content middle ml-12'>
           {contentButtonMiddle.map((text, index) => (
-            <>
-              <ButtonAlpha classButton='rounded hover:bg-neutral-100 hover:text-emerald-600 p-2 mx-2' handleClick={handleButton} text={text} key={index} />
-            </>
+            <ButtonAlpha classButton='rounded hover:bg-neutral-100 hover:text-emerald-600 p-2 mx-2' handleClick={handleButton} text={text} key={index} />
           ))}
         </div>
         <div className='menu-content'>
