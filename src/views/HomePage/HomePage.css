@@ -46,6 +46,19 @@
   display: flex;
 }
 
+.security {
+  display: flex;
+  background-color: #FFF;
+}
+
+.third-section-text {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 110px 0px;
+}
+
 @media (max-width: 600px) {
   .open-account-adv {
     display: flex;
@@ -59,12 +72,10 @@
     flex-direction: column;
   }
 
-  .second-section-text {
-    padding: 10px 30px 30px;
-  }
-
-  .second-section-title {
-    padding-top: 20px
+  .security {
+    display: flex;
+    width: 100vw;
+    flex-direction: column-reverse;
   }
 
   .div-img {
@@ -73,5 +84,21 @@
 
   .first-section-text {
     padding: 10px 30px 30px;
+  }
+
+  .second-section-text {
+    padding: 10px 30px 30px;
+  }
+
+  .second-section-title {
+    padding-top: 20px
+  }
+
+  .third-section-text {
+    padding: 10px 30px 30px;
+  }
+
+  .third-section-title {
+    padding-top: 20px
   }
 }
