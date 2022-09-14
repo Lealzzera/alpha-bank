@@ -3,6 +3,11 @@
   height: 70px;
 }
 
+.menu {
+  background-color: #FFF;
+  padding-bottom: 10px;
+}
+
 #menu-mobile-template {
   display: none;
   height: 100vh;
