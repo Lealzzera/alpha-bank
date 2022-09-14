@@ -5,6 +5,7 @@ import './HomePage.css';
 import ButtonAlpha from '../../components/ButtonAlpha/ButtonAlpha';
 import cellphoneImg from '../../assets/cellphone.png';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import videoBank from '../../assets/video-bank.gif';
 
 const HomePage = () => {
 
@@ -38,6 +39,18 @@ const HomePage = () => {
         <br />
         <p>Prefer a physical bank card? Order it for a one-time delivery fee.</p>
         <a className='second-section-button mt-10 ext-md font-bold lg:text-lg mt-10 text-slate-900' href="/">Open your free bank account <ArrowForwardIosIcon /></a>
+      </div>
+    </section>
+    <section className='security'>
+      <div className='third-section-text'>
+        <h2 className='third-section-title font-bold text-2xl lg:text-4xl text-slate-900'>Security is a top priority at Alpha Bank</h2>
+        <span className='third-section-text-span text-md lg:text-lg mt-10 text-slate-900'>Alpha Bank operates with a full German banking license, and your bank account with a German iBAN is protected up to €100,000, according to EU directives. And with fingerprint identification and advanced 3D Secure technology, you can rest assured you’re extra safe when making purchases in stores and online.
+        </span>
+        <br />
+        <a className='third-section-button mt-10 ext-md font-bold lg:text-lg mt-10 text-slate-900' href="/">Learn about security at Alpha Bank<ArrowForwardIosIcon /></a>
+      </div>
+      <div className='div-img'>
+        <img src={videoBank} alt="security" />
       </div>
     </section>
   </>
