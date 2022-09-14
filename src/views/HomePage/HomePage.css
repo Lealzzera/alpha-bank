@@ -33,11 +33,38 @@
   margin-left: -10px;
 }
 
+.second-section-text {
+  background-color: #EAEEF2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 110px 0px;
+}
+
+.free-account {
+  background-color: #EAEEF2;
+  display: flex;
+}
+
 @media (max-width: 600px) {
   .open-account-adv {
     display: flex;
     width: 100vw;
     flex-direction: column-reverse;
+  }
+
+  .free-account {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .second-section-text {
+    padding: 10px 30px 30px;
+  }
+
+  .second-section-title {
+    padding-top: 20px
   }
 
   .div-img {

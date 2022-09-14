@@ -3,11 +3,13 @@ import Header from '../../components/Header/Header';
 import cellphoneHandImg from '../../assets/cellphoneHand.png';
 import './HomePage.css';
 import ButtonAlpha from '../../components/ButtonAlpha/ButtonAlpha';
+import cellphoneImg from '../../assets/cellphone.png';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const HomePage = () => {
 
   const handleButton = () => {
-
+    //todo: function to put on button
   }
   return <>
     <Header classHeader='header' />
@@ -23,6 +25,19 @@ const HomePage = () => {
       </div>
       <div className='div-img'>
         <img src={cellphoneHandImg} alt="hand With Cellphone" />
+      </div>
+    </section>
+    <section className='free-account'>
+      <div className='div-img'>
+        <img src={cellphoneImg} alt="cellphone" />
+      </div>
+      <div className='second-section-text'>
+        <h2 className='second-section-title font-bold text-2xl lg:text-4xl text-slate-900'>Your FREE Alpha bank account</h2>
+        <span className='second-section-text-span text-md lg:text-lg mt-10 text-slate-900'>Get your free bank account in just 8 minutes and manage your money right from your smartphone. Discover smart features that give you more control over your finances. Get a virtual Mastercard right after opening your account—and connect it with Apple Pay or Google Pay to start spending right away.
+        </span>
+        <br />
+        <p>Prefer a physical bank card? Order it for a one-time delivery fee.</p>
+        <a className='second-section-button mt-10 ext-md font-bold lg:text-lg mt-10 text-slate-900' href="/">Open your free bank account <ArrowForwardIosIcon /></a>
       </div>
     </section>
   </>
